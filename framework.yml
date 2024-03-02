@@ -1,0 +1,21 @@
+[oral cancer detection and classification]
+
+  [dataset]
+    link: https://data.mendeley.com/datasets/ftmp4cvtmb/1
+
+  [preprocessing]
+    noise_removal: median_filter
+    contrast_enhance: adaptive_histogram_equalization
+
+  [feature_extraction]
+    model: NASNetLarge
+
+  [classification]
+    model: Stacked Sparse De-noising AutoEncoder
+
+  [evaluation]
+    accuracy
+    precision
+    sensitivity
+    specificity
+    recall
